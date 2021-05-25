@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	<!-- Jquery -->
+
+	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="index.html"><img src="asset/back.png" width="30" height="30"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+	
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto right">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Link</a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Dropdown
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Action</a>
+			          <a class="dropdown-item" href="#">Another action</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Something else here</a>
+			        </div>
+			      </li>	
+			    </ul>
+			  </div>
+		</nav>
+
+
+
+		<div class="container mt-3">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="card" style=" width: 300px; border-radius: 15px; display: block; margin-right: auto; margin-left: auto; " >
+
+						<div style="background-color: #5FC99B; border-radius: 15px;  ">
+							<h3 class="text-white ml-3" style=" font-size: 40px;">Bulbasaur</h3>
+							<h3 class= "text-white mr-2"style="float: right; font-size: 15px; ">#001</h3>
+							<button type="button" class="text-white btn btn-light rounded-pill ml-3 " style="background-color: #76E3B4; font-size: 10px;">Grass</button>
+					        <button type="button" class="text-white btn btn-light rounded-pill " style="background-color: #76E3B4; font-size: 10px;" >Poison</button>
+					  <img src="asset/bulbasaur1.png" class="card-img-top" alt="..." style="background-color: #5FC99B; width: 150px; height: 150px; display: block; margin-left: auto; margin-right: auto; padding: 10px; ">
+					  </div>
+					  <div class="card-body ">
+
+					  <!-- <div class="" style="display: block;margin-right: auto; margin-left: auto;" >	
+					  		<a style="color: #B5B5B5;" href="	" >About</a>
+					  		<a style="color: #B5B5B5; "href="	">Base Stats</a>
+					  		<a style="color: #B5B5B5; "href="	">Evolution</a>
+					  		<a style="color: #B5B5B5; "href="	">Moves</a>
+					  </div> -->
+
+					 <b><span id="About" onclick="About()">About</span></b> 
+					  <b><span id="Basestats" onclick="Basestats()">Base Stats</span></b>
+					  <b><span id="Evolution">Evolution</span></b>
+					  <b><span id="Moves">Moves</span></b>
+					  <hr id="Indicator">
+
+					  <!-- Bio -->
+
+					<div class="about">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<table border="0" width="250" cellpadding="5">
+
+									<tr>
+										<th>Species</th>
+										<td>Seed</td>
+									</tr>
+
+									<tr>
+										<th>Height</th>
+										<td>2'3.6*(0.70cm)</td>
+									</tr>
+
+									<tr>
+										<th>Weight</th>
+										<td>15.2 lbs(6.9kg)</td>
+									</tr>
+									<tr>
+										<th>Abilities</th>
+										<td>Overgrow, Chlorophyl</td>
+									</tr>
+
+									</table>
+
+									<h4 class="b">Breeding</h4>
+
+
+									<table border="0" width="250" cellpadding="5">
+
+									<tr>
+										<th>Gender</th>
+										<td><i class="fas fa-mars" style="margin-right: 10px;"></i>87.5%</td>
+										<td><i class="fas fa-venus" style="margin-right: 10px;"></i>12.5%</td>
+									</tr>
+
+									<tr>
+										<th>Egg Group</th>
+										<td>Monster</td>
+									</tr>
+
+									<tr>
+										<th>Egg Cycle</th>
+										<td>Grass</td>
+									</tr>
+
+									</table>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="basestats" style="display: none;">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<table border="0" width="250" cellpadding="5">
+
+									<tr>
+										<th>HP</th>
+										<td>45</td>
+										<td><img src="asset/red.png" style="width: 50px; margin-left: 3px;"></td>
+									</tr>
+
+									<tr>
+										<th>Attack</th>
+										<td>60</td>
+										<td><img src="asset/green.png" style="width: 70px; margin-left: 3px;"></td>
+									</tr>
+
+									<tr>
+										<th>Defense</th>
+										<td>48</td>
+										<td><img src="asset/red.png" style="width: 55px; margin-left: 3px;"></td>
+									</tr>
+									<tr>
+										<th>Sp.Atck</th>
+										<td>65</td>
+										<td><img src="asset/green.png" style="width: 75px; margin-left: 3px;"></td>
+									</tr>
+									<tr>
+										<th>Sp.Def</th>
+										<td>65</td>
+										<td><img src="asset/green.png" style="width: 75px; margin-left: 3px;"></td>
+									</tr>
+									<tr>
+										<th>Speed</th>
+										<td>45</td>
+										<td><img src="asset/red.png" style="width: 50px; margin-left: 3px;"></td>
+									</tr>
+									<tr>
+										<th>Total</th>
+										<td>317</td>
+										<td><img src="asset/green.png" style="width: 65px; margin-left: 3px;"></td>
+									</tr>
+
+									</table>
+
+									<h4 class="b">Type Defense</h4>
+
+									<p class="p1"> The effectiveness each type on Bulbasaur.</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					    
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<script>
+		
+		var indicator = document.getElementById("Indikator");
+
+		function About(){
+			Indicator.style.transform = "translateX(-1px)";
+		}
+
+		function Basestats(){
+			Indicator.style.transform = "translateX(63px)";
+		}
+
+	</script>
+
+	
+
+
+
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="bootstrap-4/js/bootstrap.js"></script>
+</body>
+</html>

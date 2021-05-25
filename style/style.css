@@ -1,0 +1,44 @@
+span {
+	cursor: pointer;
+}
+
+#Indicator {
+	width: 30%;
+	margin-left: -10px;
+	color: black;
+}
+
+table {
+	margin-left: -10px;
+}
+
+.b {
+	margin-left: -5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+th {
+	color: #B5B5B5;
+}
+
+span {
+	color: #B5B5B5;
+}
+
+.hr1 {
+
+	width: 50%
+
+}
+
+.p1 {
+	color: #B5B5B5;
+}
+
+span:hover {
+	color: black;
+}
+
+
+
